@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page_connection.html</title>
+    <link rel="stylesheet" href="css/style3.css"/> 
+</head>
+<body>
+    <header>
+        <p class="logo"><strong><em><i> TimesNews</i></em></strong></p>
+        <nav>
+            <a href="#">Acceuil</a>
+            <a href="#">Enregistrement</a>
+            <a href="#">Forum</a>
+            <a href="#">Contacts</a>
+        </nav>
+        <div class="bloc1">
+                <form name="form">
+                    <input type="text" class="saisie" placeholder="entrer le terme de votre recherche"/>
+                </form>
+                <img src="images/recherche.png" width="20" height="25" alt="recherche.png" onclick="chercher()" class="img">
+        </div>        
+        <div class="connection">
+            <a href="#" class="connect"> Se connecter</a>
+            <a href="#" class="inscrit"> Inscription</a>
+        </div>
+   </header>
+   <div class="corps">
+     <article>
+            <h1> Se connecter ou s'inscrire</h1>
+            <p class="texte"> Veuillez entrer vos informations personnelles pour la création de votre compte </p>
+            <form name="form1">
+                <p>votre email:  <input type="email" placeholder="xxx@gmail.com" class="espace" required></p>
+                <p>mot de passe:  <input type="password" placeholder="xxxxxx" class="espace" required></p>
+                <p> ou encore</p>
+                <p> numero de telephone:  <input type="tel" placeholder="+237 xxx xxx xxx"  class="espace" required></p><br>
+                    <input type="submit" value="s'enregistrer" onclick="submit()" class="envoi">
+                    <input type="reset" value="Annuler" onclick="reset()" class="annuler">
+            </form>
+    </article>
+</div>    

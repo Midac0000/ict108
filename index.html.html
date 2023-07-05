@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-acceuil.html</title>
+    <link rel="stylesheet" href="css/style.css"/> 
+</head>
+<body>
+    <header>
+        <p class="logo"><strong><em><i> TimesNews</i></em></strong></p>
+        <nav>
+            <a href="#">Acceuil</a>
+            <a href="#">Enregistrement</a>
+            <a href="#">Forum</a>
+            <a href="#">Contacts</a>
+        </nav>
+        <div class="bloc1">
+                <form name="form">
+                    <input type="text" class="saisie" placeholder="entrer le terme de votre recherche"/>
+                </form>
+                <img src="images/recherche.png" width="20" height="25" alt="recherche.png" onclick="chercher()"/>
+        </div>        
+        <div class="connection">
+            <a href="page_connection.html" class="connect"> Se connecter</a>
+            <a href="page_connection.html" class="inscrit"> Inscription</a>
+        </div>
+   </header>
+
+    <article>
+                <h1>Qu'allez-vous créer aujourd'hui ?</h1>
+                <p class="texte"> Avec TimesNews, vous pouvez facilement enregistrer votre emploi de temps et être rappelé le moment défini </p><br>
+                <p class="inscrire"><a href="#modal1" class="js-modal"> S'inscrire gratuitement</a></p>
+    </article>    
+            
+            <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none;">
+                <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close"><img src="images/fermeture.jpeg" width="20" height="20"></button>
+                    <h2 id="titlemodal">Se connecter ou s'inscrire </h2>
+                    <p class="text2">Utiisez votre e-mail ou autre service pour vous connecter à votre page dans le site(c'est gratuit)</p>
+                    <form name="form2">
+                        <button class="google">
+                            <img src="images/google.png" width="30" height="30" alt="image_google.png"> 
+                            <p><a href="page_connection.html">continuer avec google </a></p>
+                        </button>
+                        <button class="facebook">
+                            <img src="images/facebook.png" width="30" height="30" alt="image_facebook.png"> 
+                            <p><a href="page_connection.html">continuer avec facebook </a></p>
+                            </button>
+                        <button class="sms">
+                            <img src="images/message.png" width="30" height="30" alt="image_sms.png"> 
+                            <p><a href="page_connection.html">Recevoir un texto</a></p>
+                        </button>
+                        <p class="essaie"><a href="#">essayer d'une autre façon</a> </p>           
+                    </form>
+                    <div class="bas">
+                        <p class="text3">En continuant, vous acceptez les <u>conditions generales d'utilisation</u> du Timesnews. Lire notre <u>Politique de confidentialité</u></p>
+                        <img src="images/cloche.png" height="30" width="30" alt="image_relatif">  
+                        <strong>Inscrivez vous avec votre adresse email professonelle</strong>
+                    </div> 
+                </div>        
+            </aside>    
+
+        <script src="javascript/app.js">
+        </script>
+</body>
+</html>
